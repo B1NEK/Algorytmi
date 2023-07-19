@@ -1,4 +1,5 @@
-﻿class User
+﻿// Алгоритм отправляет рекламу пользователям, которые не оформили подписку
+class User
 {
     public string Login { get; set; }
     public string Name { get; set; }
@@ -13,8 +14,9 @@ class Program
         List<User> users = new List<User>
         {
             new User { Login = "user1", Name = "Гарри", IsPremium = true },
-            new User { Login = "user2", Name = "Рон", IsPremium = false },
-            new User { Login = "user3", Name = "Гермиона", IsPremium = true }
+            new User { Login = "user2", Name = "Рон", IsPremium = false }, 
+            new User { Login = "user3", Name = "Гермиона", IsPremium = true },
+            new User { Login = "user4", Name = "Уизли", IsPremium = false }
         };
 
         // Перебор пользователей в списке
